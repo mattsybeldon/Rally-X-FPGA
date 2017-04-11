@@ -69,3 +69,5 @@ end
 always @(posedge clk) begin
 	pwm_dat = ((v1_rom_byte [3:0] * v1_volume) + (v2_rom_byte[3:0] * v2_volume) + (v3_rom_byte[3:0] * v3_volume)) << 2;
 end
+
+endmodule
